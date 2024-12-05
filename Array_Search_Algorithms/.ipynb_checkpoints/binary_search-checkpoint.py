@@ -22,7 +22,6 @@ def binary_search(arr, target):
 
 # The data structure must be sorted.
 # Access to any element of the data structure should take constant time.
-
 # Binary Search Algorithm
 # Below is the step-by-step algorithm for Binary Search:
 
@@ -40,6 +39,7 @@ def binary_search(arr, target):
 
 # Consider an array arr[] = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91}, and the target = 23.
 
+# Binary-Search-2.webpBinary-Search-2.webp
 # How to Implement Binary Search Algorithm?
 # The Binary Search Algorithm can be implemented in the following two ways
 
@@ -49,6 +49,21 @@ def binary_search(arr, target):
 
 # Iterative Binary Search Algorithm:
 # Here we use a while loop to continue the process of comparing the key and splitting the search space in two halves.
+
+
+# Recommended Problem
+# Binary Search
+# Companies:
+# Infosys
+# Oracle
+# +6 more
+# Show Topics 
+# Solve Problem
+# Easy
+# 44.32%
+# 5.3L
+
+
 
 
 # Python3 code to implement iterative Binary
@@ -74,7 +89,8 @@ def binarySearch(arr, low, high, x):
         else:
             high = mid - 1
 
-    # If we reach here, then the element was not present
+    # If we reach here, then the element
+    # was not present
     return -1
 
 
@@ -119,11 +135,13 @@ def binarySearch(arr, low, high, x):
         if arr[mid] == x:
             return mid
 
-        # If element is smaller than mid, then it can only be present in left subarray
+        # If element is smaller than mid, then it
+        # can only be present in left subarray
         elif arr[mid] > x:
             return binarySearch(arr, low, mid-1, x)
 
-        # Else the element can only be present in right subarray
+        # Else the element can only be present
+        # in right subarray
         else:
             return binarySearch(arr, mid + 1, high, x)
 
@@ -153,16 +171,12 @@ if __name__ == '__main__':
 # Average Case: O(log N)
 # Worst Case: O(log N)
 # Auxiliary Space: O(1), If the recursive call stack is considered then the auxiliary space will be O(logN).
-
 # Applications of Binary Search Algorithm
-
-# Binary search can be used as a building block for more complex algorithms used in machine learning, such as algorithms 
-# for training neural networks or finding the optimal hyperparameters for a model.
+# Binary search can be used as a building block for more complex algorithms used in machine learning, such as algorithms for training neural 
+# networks or finding the optimal hyperparameters for a model.
 # It can be used for searching in computer graphics such as algorithms for ray tracing or texture mapping.
 # It can be used for searching a database.
-
 # Advantages of Binary Search
-
 # Binary search is faster than linear search, especially for large arrays.
 # More efficient than other searching algorithms with a similar time complexity, such as interpolation search or exponential search.
 # Binary search is well-suited for searching large datasets that are stored in external memory, such as on a hard drive or in the cloud.
@@ -170,7 +184,6 @@ if __name__ == '__main__':
 # The array should be sorted.
 # Binary search requires that the data structure being searched be stored in contiguous memory locations. 
 # Binary search requires that the elements of the array be comparable, meaning that they must be able to be ordered.
-
 # Frequently Asked Questions(FAQs) on Binary Search
 # 1. What is Binary Search?
 # Binary search is an efficient algorithm for finding a target value within a sorted array. It works by repeatedly dividing the search interval 
